@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+header h2 {
+    width: 400px;
+    color: white;
+}
+header h2 a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: rgb(73,82,105);
+    color: white;
+    padding: 1rem;
+}
+header h2 .marked {
+    color: #F60;
+}
+header nav {
+    width: 90%;
+    height: 60px;
+    background-color: #363c4d;
+    position: relative;
+}
+header nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    position: relative;
+}
+header nav ul::after {
+    content: "";
+    width: 45px;
+    height: 100%;
+    background-image: url(img/SVG/nav-triangle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    display: block;
+    position: absolute;
+    right: -44px;
+    top: 0;
+}
+header nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header nav ul li:last-chil::after {
+    display: none;
+}
+header nav ul li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    margin: 0 1rem;
+    height: 70%;
+    background-color: #fff;
+    transform: rotate(15deg);
+    right: 0;
+}
+header nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+header nav ul li a:hover {
+    color: #F60;
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+main.main {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+}
+.main__section-one {
+    width: 25%;
+    background-color: #F60;
+    position: absolute;
+    top: 0;
+    bottom: -103px;
+    left: 0;
+    z-index: 1;
+}
+.main__article {
+    width: 55%;
+    padding: 2rem;
+    margin-left: 25%;
+}
+.main__article hr {
+    margin: 10px 0;
+    border: 1px solid #F60;
+}
+.main__article img {
+    margin-top: 15px;
+}
+.left__article p {
+    text-align: right;
+}
+.image__aside-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3.5rem;
+}
+.left__aside {
+    width: 20%;
+    flex-shrink: 0;
+}
+.image__text {
+    margin-top: 20px;
+    flex-grow: 1;
+    width: 80%;
+}
+.image__text figcaption {
+    width: 40%;
+}
+.main__section-two {
+    width: 12%;
+    background-color: #fff;
+}
+.main__section-two figure {
+    text-align: right;
+    margin: 50px 0;
+    width: fit-content;
+}
+.main__section-two figcaption {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+}
+.main__section-two figcaption:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.pil {
+    width: 16px;
+    height: 16px;
+    background-color: #F60;
+    align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+.exhibition-overlay {
+    position: absolute;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(253, 133, 85);
+    padding: 1rem;
+    width: 60%;
+    height: 15%;
+}
+.exhibition-image {
+    width: 100%;
+    height: auto;
+}
+.exhibition-overlay h2 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.exhibition-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.exhibition-item {
+    border-bottom: 3px solid #F60;
+    padding-bottom: 0.5rem;
+}
+
+.exhibition-item:last-child {
+    border-bottom: none;
+}
+
+.exhibition-item h3 {
+    color: #52555f;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.exhibition-item p {
+    color: #52555f;
+    font-size: 1rem;
+}
+figure img {
+    width: 100%;
+    height: auto;
+}
+.footer {
+    background-color: rgb(73, 82, 105);
+    padding: 5px 2rem;
+    position: relative;
+    z-index: 0;
+    bottom: -27px;
+}
+
+.footer-content {
+    background-color: #363c4d;
+    position: relative;
+    z-index: 1;
+    bottom: 2rem;
+    padding: 1.5rem 0;
+    width: 99%;
+}
+.footer-content p {
+    color: #bbb;
+    display: flex;
+    justify-content: right;
+}
+.footer-content span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.footer-content::after {
+    content: "";
+    width: 45px;
+    height: 100%;
+    background-image: url(img/SVG/nav-triangle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    display: block;
+    position: absolute;
+    right: -44px;
+    top: 0;
+}
+@media only screen and (max-width: 960px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

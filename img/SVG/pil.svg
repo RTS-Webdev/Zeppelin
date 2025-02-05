@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_2" data-name="Lag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.5 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Lag_1-2" data-name="Lag 1">
+    <g>
+      <polygon class="cls-1" points=".5 1.2 49.79 50 .5 98.8 .5 1.2" />
+      <path class="cls-1" d="M1,2.4l48.08,47.6L1,97.6V2.4M0,0v100l50.5-50L0,0h0Z" />
+    </g>
+  </g>
+</svg>
